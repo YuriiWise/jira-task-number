@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Copy Jira Task Number — налаштування</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; max-width: 640px; margin: 32px auto; padding: 0 16px; }
+    textarea { width: 100%; height: 120px; font: 13px ui-monospace, monospace; box-sizing: border-box; }
+    button { margin-top: 8px; padding: 6px 16px; }
+    #status { margin-left: 8px; }
+    .error { color: #c62828; }
+  </style>
+</head>
+<body>
+  <h2>Copy Jira Task Number</h2>
+  <label for="urls">URL вашої Jira (по одному на рядок):</label>
+  <textarea id="urls" placeholder="https://company.atlassian.net"></textarea>
+  <button id="save">Зберегти</button><span id="status"></span>
+  <p>Після збереження Chrome попросить дозвіл на доступ до цих сайтів. Перезавантажте відкриті вкладки Jira.</p>
+  <script src="options.js"></script>
+</body>
+</html>
